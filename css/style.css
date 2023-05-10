@@ -1840,3 +1840,8 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.bg-photo-position-right {
+  background-size: 500px;
+  background: url(../images/gost_kazakhstan.jpg) no-repeat 80%;
+}
