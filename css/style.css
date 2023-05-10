@@ -1839,3 +1839,8 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.bg-photo-position-right {
+  background: url(../images/gost_kazakhstan.jpg) no-repeat 80%;
+  background-size: 500px;
+}
