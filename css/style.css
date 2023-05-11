@@ -11,7 +11,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Cormorant Garamond", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -1032,7 +1032,7 @@ form label {
 /*#fh5co-couple,*/
 #fh5co-gallery,
 .fh5co-section {
-  padding: 7em 0;
+  /*padding: 7em 0;*/
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1204,17 +1204,18 @@ form label {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 1em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 60px;
+  /*font-size: 60px;*/
   margin-bottom: 10px;
+  font-style: italic;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  /*color: #F14E95;*/
   font-family: 'Cormorant Garamond', serif;
 }
 @media screen and (max-width: 768px) {
@@ -1226,6 +1227,7 @@ form label {
   font-size: 18px;
   line-height: 1.5;
   color: #828282;
+  opacity: 0.8;
 }
 .fh5co-heading span {
   text-transform: uppercase;
