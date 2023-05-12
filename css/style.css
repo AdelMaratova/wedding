@@ -576,6 +576,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .timeline-title {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .date {
@@ -683,6 +684,10 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 480px) {
   #fh5co-gallery-list li {
     margin-left: 0;
+  }
+
+  .fh5co-cover {
+    height: 870px;
   }
 }
 #fh5co-gallery-list li a {
@@ -931,6 +936,10 @@ form label {
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
 
+.btn-default:hover {
+  background-color: #5ab9a4;
+}
+
 #fh5co-counter {
   text-align: center;
 }
@@ -1035,9 +1044,13 @@ form label {
 #fh5co-event,
 #fh5co-couple-story,
 /*#fh5co-couple,*/
-#fh5co-gallery,
+/*#fh5co-gallery,*/
 .fh5co-section {
   /*padding: 7em 0;*/
+  clear: both;
+}
+#fh5co-gallery{
+  padding: 2em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1048,7 +1061,7 @@ form label {
   #fh5co-event,
   #fh5co-couple-story,
   /*#fh5co-couple,*/
-  #fh5co-gallery,
+  /*#fh5co-gallery,*/
   .fh5co-section {
     padding: 3em 0;
   }
@@ -1226,6 +1239,7 @@ form label {
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
     font-size: 40px;
+    line-height: 1.1;
   }
 }
 .fh5co-heading p {
@@ -1694,6 +1708,7 @@ form label {
 }
 
 .btn {
+  width: 250px;
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Work Sans", Arial, sans-serif;
@@ -1702,7 +1717,7 @@ form label {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
-  border-radius: 30px;
+  border-radius: 10px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1720,13 +1735,12 @@ form label {
 }
 
 .btn-primary {
-  background: #F14E95;
-  color: #fff;
-  border: 2px solid #F14E95;
+  background: #a5a5a5;
+  color: #000;
+  border: 0px solid #F14E95;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f366a3 !important;
-  border-color: #f366a3 !important;
+  background: #5a9f74 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
@@ -1856,15 +1870,19 @@ form label {
 .form-control {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  height: 54px;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: unset;
+  height: 48px;
   font-size: 18px;
   font-weight: 300;
 }
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #F14E95;
+  border-color: #1e6130b3;
 }
 
 .row-pb-md {
@@ -1950,4 +1968,30 @@ form label {
     padding-bottom: 0;
   }
 }
-
+#fh5co-gallery .form-control::-webkit-input-placeholder {
+  color: #464545;
+}
+.submit-form{
+  width: 250px;
+  align-items: start;
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+}
+.form-row{
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+}
+.form-center{
+  align-items: center;
+}
+.radio-text {
+  color: black;
+}
+.form-select {
+  margin-bottom: 15px;
+  color: black;
+}
