@@ -1050,7 +1050,7 @@ form label {
   clear: both;
 }
 #fh5co-gallery{
-  padding: 2em 0;
+  padding: 3em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1968,9 +1968,9 @@ form label {
     padding-bottom: 0;
   }
 }
-#fh5co-gallery .form-control::-webkit-input-placeholder {
-  color: #464545;
-}
+/*#fh5co-gallery .form-control::-webkit-input-placeholder {*/
+/*  color: #464545;*/
+/*}*/
 .submit-form{
   width: 250px;
   align-items: start;
@@ -1979,6 +1979,7 @@ form label {
   gap: 5px;
   font-family: "Times New Roman", serif;
   font-size: 18px;
+  color: black;
 }
 .form-row{
   justify-content: center;
