@@ -1917,7 +1917,7 @@ form label {
 .bg-photo-position-right {
   background: url(../images/gost_kazakhstan2.jpg) no-repeat 80%;
   background-size: 500px;
-  background-position: -74px;
+  background-position: -74px 74px;
 }
 
 .date_first {
