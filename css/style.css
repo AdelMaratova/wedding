@@ -470,11 +470,11 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 50%;
   margin-left: 0px;
 }
-@media screen and (max-width: 480px) {
-  .timeline:before {
-    margin-left: -64px;
-  }
-}
+/*@media screen and (max-width: 480px) {*/
+/*  .timeline:before {*/
+/*    margin-left: -64px;*/
+/*  }*/
+/*}*/
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
@@ -487,7 +487,7 @@ h1, h2, h3, h4, h5, h6, figure {
   clear: both;
 }
 .timeline > li > .timeline-panel {
-  width: 40%;
+  width: 39%;
   float: left;
   border: 1px solid #d4d4d4;
   padding: 30px;
@@ -519,22 +519,21 @@ h1, h2, h3, h4, h5, h6, figure {
   border-bottom: 14px solid transparent;
   content: " ";
 }
-@media screen and (max-width: 480px) {
-  .timeline > li > .timeline-panel {
-    width: 75% !important;
-  }
-  .timeline > li > .timeline-panel:before {
-    top: 30px;
-  }
-  .timeline > li > .timeline-panel:after {
-    top: 31px;
-  }
-}
+/*@media screen and (max-width: 480px) {*/
+/*  .timeline > li > .timeline-panel {*/
+/*    width: 75% !important;*/
+/*  }*/
+/*  .timeline > li > .timeline-panel:before {*/
+/*    top: 30px;*/
+/*  }*/
+/*  .timeline > li > .timeline-panel:after {*/
+/*    top: 31px;*/
+/*  }*/
+/*}*/
 .timeline > li > .timeline-badge {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  position: relative;
   color: #fff;
   width: 160px;
   height: 160px;
@@ -552,13 +551,13 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-@media screen and (max-width: 480px) {
-  .timeline > li > .timeline-badge {
-    width: 60px;
-    height: 60px;
-    margin-left: -20px !important;
-  }
-}
+/*@media screen and (max-width: 480px) {*/
+/*  .timeline > li > .timeline-badge {*/
+/*    width: 60px;*/
+/*    height: 60px;*/
+/*    margin-left: -20px !important;*/
+/*  }*/
+/*}*/
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
 }
@@ -597,38 +596,45 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media (max-width: 992px) {
-  ul.timeline:before {
-    left: 90px;
-  }
+  /*ul.timeline:before {*/
+  /*  left: 90px;*/
+  /*}*/
 
-  ul.timeline > li > .timeline-panel {
-    width: calc(100% - 200px);
-    width: -moz-calc(100% - 200px);
-    width: -webkit-calc(100% - 200px);
-  }
+  /*ul.timeline > li > .timeline-panel {*/
+  /*  width: calc(100% - 200px);*/
+  /*  width: -moz-calc(100% - 200px);*/
+  /*  width: -webkit-calc(100% - 200px);*/
+  /*}*/
+
+  /*ul.timeline > li > .timeline-badge {*/
+  /*  left: 15px;*/
+  /*  margin-left: 0;*/
+  /*  top: 16px;*/
+  /*}*/
+
+  /*ul.timeline > li > .timeline-panel {*/
+  /*  float: right;*/
+  /*}*/
+
+  /*ul.timeline > li > .timeline-panel:before {*/
+  /*  border-left-width: 0;*/
+  /*  border-right-width: 15px;*/
+  /*  left: -15px;*/
+  /*  right: auto;*/
+  /*}*/
+
+  /*ul.timeline > li > .timeline-panel:after {*/
+  /*  border-left-width: 0;*/
+  /*  border-right-width: 14px;*/
+  /*  left: -14px;*/
+  /*  right: auto;*/
+  /*}*/
 
   ul.timeline > li > .timeline-badge {
-    left: 15px;
-    margin-left: 0;
-    top: 16px;
-  }
-
-  ul.timeline > li > .timeline-panel {
-    float: right;
-  }
-
-  ul.timeline > li > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-
-  ul.timeline > li > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    top: 42px;
   }
 
   .names_first {
@@ -1895,3 +1901,53 @@ form label {
   margin-top: 30px;
   font-family: monospace;
 }
+
+.circle {
+  display: none;
+  background: #d4d4d4;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 83px;
+  left: calc(50% - 9px);
+}
+
+@media screen and (max-width: 635px) {
+  ul.timeline > li > .timeline-badge {
+    top: -14px;
+    left: 25%;
+  }
+  .circle {
+    display: flex;
+  }
+  .timeline > li > .timeline-panel {
+    width: 50%;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    top: 90px;
+  }
+  .timeline > li > .timeline-panel:after {
+    display: none;
+  }
+  .timeline > li > .timeline-panel:before {
+    display: none;
+  }
+  .timeline-body > p {
+    line-height: 1.25em;
+  }
+  .timeline-title {
+    font-size: 22px;
+  }
+  .program {
+    height: 280px;
+  }
+  .timeline-badge-right {
+    left: 75%!important;
+  }
+  #fh5co-couple-story {
+    padding-bottom: 0;
+  }
+}
+
