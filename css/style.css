@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6, figure {
 /*}*/
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
-  height: 900px;
+  height: 770px;
   display: table;
   width: 100%;
 }
@@ -688,7 +688,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   .fh5co-cover {
-    height: 870px;
+    height: 770px;
   }
 }
 #fh5co-gallery-list li a {
