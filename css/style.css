@@ -892,7 +892,7 @@ form label {
   }
 }
 #fh5co-header .display-tc h2 {
-  font-size: 25px;
+  font-size: 21px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -910,7 +910,7 @@ form label {
   }
   .date_first {
     opacity: 0;
-    top: 271px;
+    top: 275px;
     right: 64px;
   }
   .names_first {
@@ -1917,7 +1917,7 @@ form label {
 .date_first {
   opacity: 0.5;
   margin-top: 30px;
-  font-family: monospace;
+  font-family: 'Oxygen Mono', monospace;
 }
 
 .circle {
