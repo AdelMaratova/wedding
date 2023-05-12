@@ -2005,3 +2005,9 @@ form label {
   margin-bottom: 15px;
   color: black;
 }
+.line-1 {
+  width: 1px;
+  background-color: #d4d4d4;
+  height: 50px;
+  margin-left: 50%;
+}
