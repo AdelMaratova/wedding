@@ -109,6 +109,12 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 5px 10px;
   color: black;
 }
+.bg-photo-position-right {
+  background: url(../images/gost_kazakhstan2.jpg) no-repeat 80%;
+  background-size: 500px;
+  background-position: right;
+  background-position-y: 80px;
+}
 @media screen and (max-width: 768px) {
   .fh5co-nav .fh5co-nav .menu-2 {
     display: none;
@@ -690,6 +696,11 @@ h1, h2, h3, h4, h5, h6, figure {
   .fh5co-cover {
     height: 770px;
   }
+  .bg-photo-position-right {
+    background-size: 500px;
+    background-position: -74px 74px;
+    background-position-y: 0;
+  }
 }
 #fh5co-gallery-list li a {
   min-height: 400px;
@@ -896,7 +907,6 @@ form label {
   font-size: 21px;
   line-height: 1.5;
   margin-bottom: 30px;
-  background-color: #ffffff57;
 }
 #fh5co-counter .display-tc h2,
 .fh5co-cover .display-tc h2 {
@@ -1707,8 +1717,9 @@ form label {
   }
 
   .bg-photo-position-right {
-    background-size: contain;
-    background-position-y: inherit;
+    background-size: 600px;
+    background-position-y: 0;
+    background-position: -74px 74px;
   }
 }
 
@@ -1913,12 +1924,6 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-.bg-photo-position-right {
-  background: url(../images/gost_kazakhstan2.jpg) no-repeat 80%;
-  background-size: 500px;
-  background-position: -74px 74px;
-}
 
 .date_first {
   opacity: 0.5;
