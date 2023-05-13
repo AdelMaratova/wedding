@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .date_first {
   top: 575px;
   position: absolute;
-  color: #0b0b0b;
+  color: #272727;
   font-size:20px !important;
   font-family: 'Oxygen Mono', monospace, serif;
   font-weight: normal;
@@ -1957,13 +1957,13 @@ form label {
 
 .circle {
   display: none;
-  background: #d4d4d4;
+  background: #f0ad4e;
   border-radius: 50%;
-  height: 16px;
-  width: 16px;
+  height: 11px;
+  width: 11px;
   position: absolute;
   top: 83px;
-  left: calc(50% - 7px);
+  left: calc(50% - 5px);
 }
 
 @media screen and (max-width: 635px) {
