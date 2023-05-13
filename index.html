@@ -422,44 +422,41 @@
 		</div>
 		<div class="container">
 			<form>
-				<p>Do you like ice cream?</p>
-				<input type="radio" name="answer" value="yes" id="yes">
-				<label for="yes">Yes</label>
-
-				<input type="radio" name="answer" value="no" id="no">
-				<label for="no">No</label>
-
-				<div id="ice-cream-text" style="display: none;">
-					<label for="ice-cream-input">What is your favorite ice cream flavor?</label>
-					<input type="text" id="ice-cream-input" name="ice-cream-input">
-				</div>
-			</form>
-			<form>
-
+				<p>1. Имя и фамилия</p>
 				<div class="form-group">
-					<label for="guest_name">Имя и фамилия</label>
 					<input type="text" class="form-control form-line form-name" id="guest_name" name="guest_name">
 				</div>
-				<div class="radio">
-					<label><input type="radio" name="form-radio-1" id="one_guest" value="1">С удовольсвием приду!</label>
+				<p>2. Присутствие</p>
+				<div>
+					<input type="radio" name="answer" value="yes" id="one_guest">
+					<label for="one_guest">С удовольсвием приду!</label>
 				</div>
-				<div class="radio">
-					<label><input type="radio" name="form-radio-2" id="any_guest" value="2">Приду не один</label>
+				<div>
+					<input type="radio" name="answer" value="no" id="any_guest">
+					<label for="any_guest">Приду не один!</label>
 				</div>
-				<p> Choose your favroite season: </p>
-				<input type="radio" name="JTP" id="summer" value="summer">Summer<br>
-				<input type="radio" name="JT1P" id="winter" value="winter">Winter<br>
-				<input type="radio" name="JT3P" id="rainy" value="rainy">Rainy<br>
-				<input type="radio" name="JTP5" id="autumn" value="autumn">Autumn<br>
-
-				<div class="form-group hidden-form">
-					<label for="adult_name">ФИО взрослых</label>
+				<div class="form-group hidden-form" id="hidden-form">
+					<label for="adult_name">Имена взрослых</label>
 					<input type="text" class="form-control form-name" id="adult_name" name="adult_name">
 					<label for="child_name">Имена детей</label>
 					<input type="text" class="form-control form-name" id="child_name" name="child_name">
 				</div>
-				<div class="radio">
-					<label><input type="radio" name="form-radio-3" id="no_guest"  value="3">Я не приду(</label>
+				<div>
+					<input type="radio" name="answer" value="no_guest" id="no_guest">
+					<label for="no_guest">Я не приду(</label>
+				</div>
+				<p>3. Алкоголь</p>
+				<div>
+					<input type="radio" name="alcohol" value="wine" id="wine">
+					<label for="wine">Вино</label>
+				</div>
+				<div>
+					<input type="radio" name="alcohol" value="hard" id="hard">
+					<label for="hard">Что-то покрепче</label>
+				</div>
+				<div>
+					<input type="radio" name="alcohol" value="no_alcohol" id="no_alcohol">
+					<label for="no_alcohol">Я за рулем)</label>
 				</div>
 				<button type="submit" class="btn btn-default">Отправить</button>
 			</form>
@@ -734,34 +731,27 @@
     });
 </script>
 
-	// hidden form
 	<script>
-		$('#yes').change(function() {
+		$('#any_guest').change(function() {
 			if ($(this).is(':checked')) {
-				$('#ice-cream-text').show();
+				$('#hidden-form').show();
 			} else {
-				$('#ice-cream-text').hide();
+				$('#hidden-form').hide();
 			}
 		});
 
-		$('#no').change(function() {
+		$('#one_guest').change(function() {
 			if ($(this).is(':checked') ) {
-				$('#ice-cream-text').hide();
+				$('#hidden-form').hide();
 			}
 		});
 
-		const hidden_forms = document.getElementsByClassName('.hidden-form');
-		if(document.getElementById('any_guest').checked) {
-			alert(123);
-			// hidden_forms.forEach(hidden_form => {
-			// 	hidden_form.style.display = "unset";
-			// 	console.log('asfasfasfafafaf')
-			// })
-		}
-		$('#summer').click(function(){
-alert(13)
-
+		$('#no_guest').change(function() {
+			if ($(this).is(':checked') ) {
+				$('#hidden-form').hide();
+			}
 		});
+
 	</script>
 
 	</body>
