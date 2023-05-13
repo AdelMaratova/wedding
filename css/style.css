@@ -884,7 +884,7 @@ form label {
     margin-left: 25px;
   }
   #fh5co-header .display-tc h2 {
-    margin-left: 25px;
+    margin-left: 113px;
   }
   .date_first {
     top: 340px;
@@ -901,7 +901,7 @@ form label {
 }
 #fh5co-header .display-tc h2 {
   font-size: 21px;
-  line-height: 1.5;
+  line-height: 0.9;
   margin-bottom: 30px;
   background-color: #ffffff57;
 }
@@ -919,7 +919,7 @@ form label {
   }
   .date_first {
     opacity: 0;
-    top: 275px;
+    top: 257px;
     right: 64px;
   }
   .names_first {
