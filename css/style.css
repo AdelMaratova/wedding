@@ -2071,12 +2071,14 @@ form label {
   color: #000000;
   background-color: unset;
 }
-.other-alcohol {
-  display: none;
-}
 .input-text-form {
   color: #000000;
   font-size: 16px;
+}
+.other-alcohol {
+  width: 250px;
+  padding-left: 8px;
+  height: 32px;
 }
 
 @media screen and (max-width: 353px) {
