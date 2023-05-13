@@ -1935,13 +1935,13 @@ form label {
 
 .circle {
   display: none;
-  background: #d4d4d4;
+  background: #f0ad4e;
   border-radius: 50%;
-  height: 16px;
-  width: 16px;
+  height: 11px;
+  width: 11px;
   position: absolute;
   top: 83px;
-  left: calc(50% - 7px);
+  left: calc(50% - 5px);
 }
 
 @media screen and (max-width: 635px) {
