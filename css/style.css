@@ -76,20 +76,20 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
 }
 
-::-webkit-selection {
-  color: #fff;
-  background: #F14E95;
-}
+/*::-webkit-selection {*/
+/*  color: #fff;*/
+/*  background: #138474;*/
+/*}*/
 
-::-moz-selection {
-  color: #fff;
-  background: #F14E95;
-}
+/*::-moz-selection {*/
+/*  color: #fff;*/
+/*  background: #138474;*/
+/*}*/
 
-::selection {
-  color: #fff;
-  background: #F14E95;
-}
+/*::selection {*/
+/*  color: #fff;*/
+/*  background: #138474;*/
+/*}*/
 
 .fh5co-nav {
   position: absolute;
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: black;
 }
 .bg-photo-position-right {
-  background: url(../images/gost_kazakhstan2.jpg) no-repeat 80%;
+  background: url(../images/gost_kazakhstan2.webp) no-repeat 80%;
   background-size: 500px;
   background-position: right;
   background-position-y: 80px;
