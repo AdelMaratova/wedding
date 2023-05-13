@@ -100,9 +100,28 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 40px 0;
   z-index: 1001;
 }
+.married_text {
+  opacity: 0.5;
+  margin-top: 30px;
+  font-size:60px !important;
+  font-family: aurora, serif;
+  font-weight: normal;
+  font-style: normal;
+  color: chocolate;
+  top: 400px;
+  position: absolute;
+  width: 350px;
+  margin-left: 25px !important;
+}
 @media screen and (max-width: 768px) {
   .fh5co-nav {
     padding: 20px 0;
+  }
+  .married_text {
+    top: 280px;
+    font-size:50px !important;
+    left: 100px;
+    width: 250px;
   }
 }
 .fh5co-nav #fh5co-logo {
@@ -122,9 +141,23 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: right;
   background-position-y: 80px;
 }
+.date_first {
+  top: 575px;
+  position: absolute;
+  color: #0b0b0b;
+  font-size:20px !important;
+  font-family: 'Oxygen Mono', monospace, serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 30px !important;
+}
 @media screen and (max-width: 768px) {
   .fh5co-nav .fh5co-nav .menu-2 {
     display: none;
+  }
+  .date_first {
+    top: 373px;
+    right: 25px;
   }
 }
 .fh5co-nav ul {
@@ -609,7 +642,10 @@ h1, h2, h3, h4, h5, h6, figure {
 .timeline-body > p + p {
   margin-top: 5px;
 }
-
+.names_first {
+  position: absolute;
+  top: 163px;
+}
 @media (max-width: 992px) {
   /*ul.timeline:before {*/
   /*  left: 90px;*/
@@ -650,16 +686,6 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 100px;
     margin-left: -50px;
     top: 42px;
-  }
-
-  .names_first {
-    position: absolute;
-    top: 150px;
-  }
-
-  .date_first {
-    position: absolute;
-    top: 370px;
   }
 }
 #fh5co-gallery-list {
@@ -891,14 +917,11 @@ form label {
     font-size: 40px;
   }
   #fh5co-header .display-tc h1 {
-    font-size: 80px;
+    font-size: 40px;
     margin-left: 25px;
   }
   #fh5co-header .display-tc h2 {
     margin-left: 113px;
-  }
-  .date_first {
-    top: 340px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -926,11 +949,6 @@ form label {
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
     font-size: 16px;
-  }
-  .date_first {
-    opacity: 0;
-    top: 257px;
-    right: 64px;
   }
   .names_first {
     top: 163px;
@@ -1728,6 +1746,11 @@ form label {
     background-position-y: 0;
     background-position: -74px 74px;
   }
+  .married_text {
+    right: 45px;
+    left: unset;
+    top: 260px;
+  }
 }
 
 .btn {
@@ -1932,12 +1955,6 @@ form label {
 
 /*# sourceMappingURL=style.css.map */
 
-.date_first {
-  opacity: 0.5;
-  margin-top: 30px;
-  font-family: 'Oxygen Mono', monospace;
-}
-
 .circle {
   display: none;
   background: #d4d4d4;
@@ -2022,4 +2039,11 @@ form label {
   background-color: #0b0b0b;
   height: 40px;
   margin-left: 50%;
+}
+@media screen and (max-width: 425px) {
+  .married_text {
+    right: 12px;
+    margin-left: 0 !important;
+    left: unset;
+  }
 }
