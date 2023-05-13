@@ -95,9 +95,8 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   top: 0;
   margin: 0;
-  padding: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   z-index: 1001;
 }
 .married_text {
@@ -156,7 +155,7 @@ h1, h2, h3, h4, h5, h6, figure {
     display: none;
   }
   .date_first {
-    top: 373px;
+    top: 366px;
     right: 25px;
   }
 }
@@ -342,7 +341,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 780px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -1260,6 +1259,7 @@ form label {
 
 .fh5co-heading {
   margin-bottom: 1em;
+  margin-top: 2em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;

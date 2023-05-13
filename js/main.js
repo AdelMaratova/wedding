@@ -103,7 +103,9 @@
 								el.addClass('fadeInLeft animated-fast');
 							} else if ( effect === 'fadeInRight') {
 								el.addClass('fadeInRight animated-fast');
-							} else {
+							} else if ( effect === 'fadeInDown') {
+								el.addClass('fadeInDown animated-fast');
+							}else {
 								el.addClass('fadeInUp animated-fast');
 							}
 
