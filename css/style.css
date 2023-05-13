@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .white-outline-button:active {
-  opacity: 10%;
+  opacity: 30%;
   color: #000000;
 }
 
@@ -669,7 +669,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .names_first {
   position: absolute;
-  top: 163px;
+  top: 171px;
 }
 @media (max-width: 992px) {
   /*ul.timeline:before {*/
@@ -933,7 +933,7 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 0px;
-  font-size: 100px;
+  font-size: 80px;
   font-family: 'Cormorant Garamond', serif;
 }
 @media screen and (max-width: 768px) {
@@ -1942,19 +1942,23 @@ form label {
 .form-line {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
   border-top: none;
   border-left: none;
   border-right: none;
   border-radius: unset;
-  height: 48px;
+  height: 32px;
   font-size: 18px;
   font-weight: 300;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 16px;
+  color: #000000;
 }
 .form-line:active, .form-line:focus {
   outline: none;
   box-shadow: none;
-  border-color: #1e6130b3;
+  border-color: rgb(121, 121, 121);
 }
 
 .row-pb-md {
@@ -2043,6 +2047,36 @@ form label {
 }
 .hidden-form {
   display: none;
+}
+.form-title {
+  font-family: "Cormorant Garamond", Arial, sans-serif;
+  font-size: 20px;
+  margin: 10px 0 6px 0;
+}
+.submit-button{
+  left: calc(50% - 125px);
+  position: relative;
+  border-radius: 0;
+  border-color: #000000;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+.submit-button:hover {
+  opacity: 70%;
+  color: #000000;
+  background-color: unset;
+}
+.submit-button:active {
+  opacity: 30%;
+  color: #000000;
+  background-color: unset;
+}
+.other-alcohol {
+  display: none;
+}
+.input-text-form {
+  color: #000000;
+  font-size: 16px;
 }
 @media screen and (max-width: 425px) {
   .married_text {

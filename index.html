@@ -422,43 +422,48 @@
 		</div>
 		<div class="container">
 			<form>
-				<p>1. Имя и фамилия</p>
-				<div class="form-group">
-					<input type="text" class="form-control form-line form-name" id="guest_name" name="guest_name">
+				<div class="form-title animate-box">1. Имя и фамилия</div>
+				<div class="form-group animate-box">
+					<input type="text" class="form-control form-line" id="guest_name" name="guest_name" placeholder="Имя и фамилия">
 				</div>
-				<p>2. Присутствие</p>
-				<div>
+				<div class="form-title animate-box">2. Присутствие</div>
+				<div class="animate-box">
 					<input type="radio" name="answer" value="yes" id="one_guest">
-					<label for="one_guest">С удовольсвием приду!</label>
+					<label for="one_guest">С удовольствием приду!</label>
 				</div>
-				<div>
+				<div class="animate-box">
 					<input type="radio" name="answer" value="no" id="any_guest">
 					<label for="any_guest">Приду не один!</label>
 				</div>
-				<div class="form-group hidden-form" id="hidden-form">
+				<div class="form-group hidden-form animate-box" id="hidden-form">
 					<label for="adult_name">Имена взрослых</label>
-					<input type="text" class="form-control form-name" id="adult_name" name="adult_name">
+					<input type="text" class="form-control input-text-form" id="adult_name" name="adult_name">
 					<label for="child_name">Имена детей</label>
-					<input type="text" class="form-control form-name" id="child_name" name="child_name">
+					<input type="text" class="form-control input-text-form" id="child_name" name="child_name">
 				</div>
-				<div>
+				<div class="animate-box">
 					<input type="radio" name="answer" value="no_guest" id="no_guest">
-					<label for="no_guest">Я не приду(</label>
+					<label for="no_guest">К сожалению не смогу прийти(</label>
 				</div>
-				<p>3. Алкоголь</p>
-				<div>
+				<div class="form-title animate-box">3. Алкоголь</div>
+				<div class="animate-box">
+					<input type="radio" name="alcohol" value="no_alcohol" id="no_alcohol">
+					<label for="no_alcohol">Я за ЗОЖ!</label>
+				</div>
+				<div class="animate-box">
 					<input type="radio" name="alcohol" value="wine" id="wine">
 					<label for="wine">Вино</label>
 				</div>
-				<div>
-					<input type="radio" name="alcohol" value="hard" id="hard">
-					<label for="hard">Что-то покрепче</label>
+				<div class="animate-box">
+					<input type="radio" name="alcohol" value="vodka" id="vodka">
+					<label for="vodka">Водка</label>
 				</div>
-				<div>
-					<input type="radio" name="alcohol" value="no_alcohol" id="no_alcohol">
-					<label for="no_alcohol">Я за рулем)</label>
+				<div class="animate-box">
+					<input type="radio" name="alcohol" value="other" id="other">
+					<label for="other">Другое</label>
+					<input type="text" class="form-control other-alcohol input-text-form" id="other-alcohol" name="other-alcohol" placeholder="Укажите что">
 				</div>
-				<button type="submit" class="btn btn-default">Отправить</button>
+				<button type="submit" class="btn btn-default submit-button animate-box">Отправить</button>
 			</form>
 		</div>
 	</div>
@@ -750,6 +755,39 @@
 			if ($(this).is(':checked') ) {
 				$('#hidden-form').hide();
 			}
+		});
+
+	</script>
+
+	<script>
+		$('#other').change(function() {
+			if ($(this).is(':checked')) {
+				$('#other-alcohol').show();
+			} else {
+				$('#other-alcohol').hide();
+			}
+		});
+
+		$('#no_alcohol').change(function() {
+			if ($(this).is(':checked') ) {
+				$('#other-alcohol').hide();
+			}
+		});
+
+		$('#wine').change(function() {
+			if ($(this).is(':checked') ) {
+				$('#other-alcohol').hide();
+			}
+		});
+
+		$('#vodka').change(function() {
+			if ($(this).is(':checked') ) {
+				$('#other-alcohol').hide();
+			}
+		});
+
+		$('form').submit(function (e) {
+			e.preventDefault();
 		});
 
 	</script>
