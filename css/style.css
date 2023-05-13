@@ -54,7 +54,7 @@ body {
 }
 
 a {
-  color: #F14E95;
+  color: #0b0b0b;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -99,6 +99,28 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 20px 0;
   z-index: 1001;
 }
+
+.white-outline-button {
+  padding: 10px;
+  border: solid 1px;
+  cursor: pointer;
+}
+
+.rsvp-button{
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.white-outline-button:hover {
+  opacity: 70%;
+  color: #000000;
+}
+
+.white-outline-button:active {
+  opacity: 10%;
+  color: #000000;
+}
+
 .married_text {
   opacity: 0.5;
   margin-top: 30px;
@@ -1078,7 +1100,7 @@ form label {
 #fh5co-started,
 #fh5co-footer,
 #fh5co-event,
-#fh5co-couple-story,
+/*#fh5co-couple-story,*/
 /*#fh5co-couple,*/
 /*#fh5co-gallery,*/
 .fh5co-section {
@@ -1095,7 +1117,7 @@ form label {
   #fh5co-started,
   #fh5co-footer,
   #fh5co-event,
-  #fh5co-couple-story,
+  /*#fh5co-couple-story,*/
   /*#fh5co-couple,*/
   /*#fh5co-gallery,*/
   .fh5co-section {
