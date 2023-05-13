@@ -2021,7 +2021,7 @@ form label {
     line-height: 1.25em;
   }
   .timeline-title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .program {
     height: 280px;
@@ -2078,6 +2078,13 @@ form label {
   color: #000000;
   font-size: 16px;
 }
+
+@media screen and (max-width: 353px) {
+  .timeline-title {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .married_text {
     right: 12px;
