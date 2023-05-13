@@ -184,6 +184,20 @@
 	
 	};
 
+	var goToRSVP = function() {
+
+		$('.js-rsvp').on('click', function(event){
+
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('#rsvp').offset().top
+			}, 2000, 'easeInOutExpo');
+
+			return false;
+		})
+	};
+
 
 	// Loading page
 	var loaderPage = function() {
@@ -225,6 +239,7 @@
 		dropdown();
 		testimonialCarousel();
 		goToTop();
+		goToRSVP();
 		loaderPage();
 		counter();
 		counterWayPoint();
