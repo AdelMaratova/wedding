@@ -475,8 +475,7 @@
 				<div class="modal-body">
 					<h2 style="font-size: 42px; font-family: aurora, serif; font-weight: normal; font-style: normal; text-align: center;">Спасибо!</h2>
 					<p style="text-align: center;">Мы получили Ваш ответ</p>
-					<button type="submit" class="btn btn-default submit-button" style="width: 100px; left: calc(50% - 50px);">OK</button>
-<!--					<span class="close">Ок</span>-->
+					<button type="submit" class="btn btn-default submit-button close_modal" style="width: 100px; left: calc(50% - 50px); bottom: 25px;">OK</button>
 				</div>
 			</div>
 		</div>
@@ -711,7 +710,7 @@
 <script>
 	$(document).ready(function() {
 		// При нажатии на кнопку "Закрыть модальное окно"
-		$(".close").click(function() {
+		$(".close_modal").click(function() {
 			// Обнуляем форму
 			$('form')[0].reset();
 			// Скрываем модальное окно
