@@ -1213,7 +1213,8 @@ form label {
 }
 
 .simply-amount {
-font-size: 40px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .simply-word {
@@ -1237,6 +1238,9 @@ font-size: 40px;
   /*padding: 7em 0;*/
   clear: both;
 }
+#fh5co-footer {
+  padding: 1em 0;
+}
 #fh5co-gallery{
   padding: 3em 0;
   clear: both;
@@ -1245,7 +1249,7 @@ font-size: 40px;
   #fh5co-testimonial,
   #fh5co-services,
   #fh5co-started,
-  #fh5co-footer,
+  /*#fh5co-footer,*/
   #fh5co-event,
   /*#fh5co-couple-story,*/
   /*#fh5co-couple,*/
@@ -2251,5 +2255,17 @@ input[type="radio"] {
   }
   .js-rsvp-invite {
     padding: 8px;
+  }
+}
+
+@media screen and (max-width: 470px){
+.simply-countdown {
+  gap: 30px;
+}
+  .simply-amount {
+    font-size: 30px;
+  }
+  .simply-word {
+    font-size: 18px;
   }
 }
