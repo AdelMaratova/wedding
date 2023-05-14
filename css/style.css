@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .married_text {
     top: 280px;
     font-size:50px !important;
-    left: 100px;
+    left: 34px;
     width: 250px;
   }
   .modal {
@@ -254,18 +254,26 @@ h1, h2, h3, h4, h5, h6, figure {
   text-align: center;
   animation-delay: 500ms;
   margin-left: 30px;
+  background-color: #ffffff21;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .fh5co-nav .menu-2 {
     display: none;
   }
   .date_first {
-    top: 366px;
+    top: 657px;
     right: 25px;
   }
   .rsvp-main-button {
-    top: 417px;
-    right: 62px;
+    top: 459px;
+    left: 7px;
+    bottom: unset;
+  }
+}
+@media screen and (max-width: 627px) {
+  .rsvp-main-button {
+    top: 408px;
+    left: -3px;
     bottom: unset;
   }
 }
@@ -1851,7 +1859,15 @@ form label {
   .fh5co-nav-toggle {
     display: block;
   }
-
+  .date_first {
+    top: 387px;
+  }
+  .rsvp-main-button {
+    top: 524px;
+    left: unset;
+    right: 45px;
+    bottom: unset;
+  }
   .menu-1 {
     display: none;
   }
@@ -2184,17 +2200,19 @@ input[type="radio"] {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 390px) {
   .married_text {
     right: 12px;
     margin-left: 0 !important;
     left: unset;
   }
-  .rsvp-main-button{
-    top: 455px;
-    right: 12px;
+  .date_first {
+    top: 364px;
   }
-}
-input::placeholder {
-  color: red;
+  .rsvp-main-button {
+    left: unset;
+    right: 8px;
+    bottom: unset;
+    padding: 8px;
+  }
 }
