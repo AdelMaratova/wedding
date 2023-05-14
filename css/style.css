@@ -247,6 +247,14 @@ h1, h2, h3, h4, h5, h6, figure {
   font-style: normal;
   margin-left: 30px !important;
 }
+.rsvp-main-button {
+  position: absolute;
+  bottom: 76px;
+  font-weight: 600;
+  text-align: center;
+  animation-delay: 500ms;
+  margin-left: 30px;
+}
 @media screen and (max-width: 768px) {
   .fh5co-nav .fh5co-nav .menu-2 {
     display: none;
@@ -254,6 +262,11 @@ h1, h2, h3, h4, h5, h6, figure {
   .date_first {
     top: 366px;
     right: 25px;
+  }
+  .rsvp-main-button {
+    top: 417px;
+    right: 62px;
+    bottom: unset;
   }
 }
 .fh5co-nav ul {
@@ -2176,6 +2189,10 @@ input[type="radio"] {
     right: 12px;
     margin-left: 0 !important;
     left: unset;
+  }
+  .rsvp-main-button{
+    top: 455px;
+    right: 12px;
   }
 }
 input::placeholder {
