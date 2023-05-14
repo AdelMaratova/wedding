@@ -25,6 +25,56 @@ body {
   color: #000;
   background: #fff;
 }
+/* Стили для затемнения фона */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+/* Стили для модального окна */
+.modal {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 300px;
+}
+
+.modal-dialog {
+  width: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  height: 240px;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Стили для анимации */
+.animate-modal {
+  animation-name: modalFadeIn;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 #page {
   position: relative;
@@ -143,6 +193,9 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size:50px !important;
     left: 100px;
     width: 250px;
+  }
+  .modal {
+    left: 49%;
   }
 }
 .fh5co-nav #fh5co-logo {
