@@ -164,11 +164,23 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2 style="font-family: aurora, serif; font-weight: normal; font-style: normal;">Как добраться?</h2>
-					<p style="font-family: 'Cormorant Garamond', serif; margin: 1em 0 2em 0;">
+					<p style="font-family: 'Cormorant Garamond', serif; margin: 1em 0 0 0;">
 						Для вашего удобства мы подготовили карту, надеемся, что вы легко найдете место проведения
-						свадьбы и порадуете нас своим присутствием
+						свадьбы и порадуете нас своим присутствием.
 					</p>
-					<div id="map" style="width:100%; height:300px; margin-bottom: 3em;"></div>
+
+					<div style="display: flex; flex-direction: row; justify-content: center; gap: 20px; margin-bottom: 25px; height: 75px;">
+						<div class="animate-box rsvp-button">
+							<a href="https://yandex.kz/maps/162/almaty/?ll=76.952495%2C43.257303&mode=routes&rtext=~43.257303%2C76.952495&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D1789826293&z=14" class="white-outline-button js-rsvp">Построить маршрут</a>
+						</div>
+						<div class="animate-box rsvp-button">
+							<a href="https://taxi.yandex.kz/ru_kz/order/?gfrom=%2C&gto=43.257303%2C76.952495&tariff=econom&lang=ru&utm_source=yamaps&utm_medium=2334692&ref=2334692" class="white-outline-button js-rsvp">Заказать такси</a>
+						</div>
+					</div>
+					<a href="https://2gis.kz/almaty/firm/70000001023195466?m=76.952684%2C43.257314%2F17&utm_source=details&utm_medium=widget&utm_campaign=firmsonmap" style="cursor: pointer;">
+						<div id="map" style="width:100%; height:300px; margin-bottom: 3em;">
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -459,11 +471,12 @@
 					<input type="radio" name="alcohol_drinker" value="vodka" id="vodka">
 					<label for="vodka">Водка</label>
 				</div>
-				<div class="animate-box">
+				<div class="animate-box" style="display: flex;flex-direction: row; gap: 5px;">
 					<input type="radio" name="alcohol_drinker" value="other" id="other">
 					<label for="other">
-						<input type="text" class="form-control other-alcohol input-text-form form-line" id="other-alcohol" name="pref_alcohol" placeholder="Другое">
-					</label>
+						 Другое</label>
+						<input type="text" class="form-control other-alcohol input-text-form form-line" id="other-alcohol" name="pref_alcohol">
+
 				</div>
 				<button type="submit" class="btn btn-default submit-button animate-box" id="submitButton">Отправить</button>
 			</form>
