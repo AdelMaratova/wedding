@@ -196,6 +196,17 @@
 
 			return false;
 		})
+
+		$('.js-rsvp-invite').on('click', function(event){
+
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('#fh5co-couple').offset().top
+			}, 1000, 'easeInOutExpo');
+
+			return false;
+		})
 	};
 
 
