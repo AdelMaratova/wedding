@@ -197,16 +197,19 @@
 			return false;
 		})
 
-		$('.js-rsvp-invite').on('click', function(event){
+	};
 
-			event.preventDefault();
+	var goToInvite = function() {
+	$('.js-rsvp-invite').on('click', function(event){
 
-			$('html, body').animate({
-				scrollTop: $('#fh5co-couple').offset().top
-			}, 1000, 'easeInOutExpo');
+		event.preventDefault();
 
-			return false;
-		})
+		$('html, body').animate({
+			scrollTop: $('#fh5co-couple').offset().top
+		}, 1000, 'easeInOutExpo');
+
+		return false;
+	})
 	};
 
 
@@ -251,6 +254,7 @@
 		testimonialCarousel();
 		goToTop();
 		goToRSVP();
+		goToInvite();
 		loaderPage();
 		counter();
 		counterWayPoint();
