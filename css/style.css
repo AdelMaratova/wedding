@@ -1131,7 +1131,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter .feature-center {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 #fh5co-counter .icon {
@@ -2244,7 +2244,7 @@ form label {
 }
 .input-text-form {
   color: #000000;
-  font-size: 16px;
+  font-size: 20px;
 }
 .other-alcohol {
   width: 250px;
