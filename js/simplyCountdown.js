@@ -75,13 +75,15 @@
         sectionTag.classList.add(typeClass);
         amountTag.classList.add(parameters.amountClass);
         wordTag.classList.add(parameters.wordClass);
+        innerSectionTag.classList.add('time_piece');
 
         countdown.appendChild(sectionTag);
 
         return {
             full: sectionTag,
             amount: amountTag,
-            word: wordTag
+            word: wordTag,
+            inner: innerSectionTag,
         };
     };
 
@@ -122,11 +124,11 @@
                 minutes: 0,
                 seconds: 0,
                 words: {
-                    days: 'day',
-                    hours: 'hour',
-                    minutes: 'minute',
-                    seconds: 'second',
-                    pluralLetter: 's'
+                    days: 'Дней',
+                    hours: 'Часов',
+                    minutes: 'Минут',
+                    seconds: 'Секунд',
+                    pluralLetter: ''
                 },
                 plural: true,
                 inline: false,
