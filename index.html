@@ -311,6 +311,7 @@
 							</div>
 						</li>
 			    	</ul>
+					<img src="images/branch.png" class="branch animate-box">
 				</div>
 			</div>
 		</div>
@@ -416,11 +417,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2 style="font-size: 35px; font-family: aurora, serif; font-weight: normal; font-style: normal">Подтвердите, пожалуйста, свое присутствие на торжестве!</h2>
+					<h2 style="font-size: 35px; font-family: aurora, serif; font-weight: normal; font-style: normal; margin-top: 1em;">Подтвердите, пожалуйста, свое присутствие на торжестве!</h2>
 				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container" style="font-size: 18px">
 			<form>
 				<div class="form-title animate-box">1. Ваше имя и фамилия</div>
 				<div class="form-group animate-box">
@@ -443,7 +444,7 @@
 				</div>
 				<div class="animate-box">
 					<input type="radio" name="answer" value="no_guest" id="no_guest">
-					<label for="no_guest">К сожалению, не смогу присутствовать :(</label>
+					<label for="no_guest">Не смогу присутствовать :(</label>
 				</div>
 				<div class="form-title animate-box">3. Предпочитаемый алкоголь</div>
 				<div class="animate-box">
@@ -461,7 +462,7 @@
 				<div class="animate-box">
 					<input type="radio" name="alcohol" value="other" id="other">
 					<label for="other">
-						<input for="other" type="text" class="form-control other-alcohol input-text-form" id="other-alcohol" name="other-alcohol" placeholder="Другое">
+						<input for="other" type="text" class="form-control other-alcohol input-text-form form-line" id="other-alcohol" name="other-alcohol" placeholder="Другое">
 					</label>
 				</div>
 				<button type="submit" class="btn btn-default submit-button animate-box">Отправить</button>
@@ -756,6 +757,10 @@
 		$('form').submit(function (e) {
 			e.preventDefault();
 		});
+
+		$('#other-alcohol').click(function() {
+			$('#other').click()
+		})
 
 	</script>
 
