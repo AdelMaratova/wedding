@@ -1863,7 +1863,7 @@ form label {
     top: 387px;
   }
   .rsvp-main-button {
-    top: 524px;
+    top: 534px;
     left: unset;
     right: 45px;
     bottom: unset;
@@ -2213,6 +2213,8 @@ input[type="radio"] {
     left: unset;
     right: 8px;
     bottom: unset;
+  }
+  .js-rsvp-invite {
     padding: 8px;
   }
 }
