@@ -1213,7 +1213,8 @@ form label {
 }
 
 .simply-amount {
-font-size: 40px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .simply-word {
@@ -2251,5 +2252,17 @@ input[type="radio"] {
   }
   .js-rsvp-invite {
     padding: 8px;
+  }
+}
+
+@media screen and (max-width: 470px){
+.simply-countdown {
+  gap: 30px;
+}
+  .simply-amount {
+    font-size: 30px;
+  }
+  .simply-word {
+    font-size: 18px;
   }
 }
