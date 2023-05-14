@@ -289,15 +289,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav ul li a {
   font-size: 14px;
-  padding: 30px 10px;
+  padding: 30px 5px;
   text-transform: uppercase;
   color: black;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
-  color: white;
+.fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus {
+  color: grey;
 }
 .fh5co-nav ul li.has-dropdown {
   position: relative;
@@ -1856,9 +1856,6 @@ form label {
   border-bottom: none !important;
 }
 @media screen and (max-width: 540px) {
-  .fh5co-nav-toggle {
-    display: block;
-  }
   .date_first {
     top: 387px;
   }
