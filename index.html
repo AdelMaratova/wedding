@@ -482,7 +482,18 @@
 			</form>
 		</div>
 	</div>
-
+	<div class="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h2 style="font-size: 42px; font-family: aurora, serif; font-weight: normal; font-style: normal; text-align: center;">Спасибо!</h2>
+					<p style="text-align: center;">Мы получили Ваш ответ</p>
+					<button type="submit" class="btn btn-default submit-button close_modal" style="width: 100px; left: calc(50% - 50px); bottom: 25px;">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="overlay"></div>
 	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
@@ -711,6 +722,16 @@
 	<script src="js/main.js"></script>
 <script>
 	$(document).ready(function() {
+		// При нажатии на кнопку "Закрыть модальное окно"
+		$(".close_modal").click(function() {
+			// Обнуляем форму
+			$('form')[0].reset();
+			// Скрываем модальное окно
+			$(".modal").fadeOut().removeClass("animate-modal");
+			// Убираем затемнение фона
+			$("#overlay").fadeOut();
+		});
+
 		$('#submitButton').click(function(e) {
 			e.preventDefault();
 			var name = $('input[name="name"]').val();
@@ -746,6 +767,21 @@
 					console.log(error);
 				}
 			});
+
+			// Очистить форму
+			$('form')[0].reset();
+
+			// Отобразить модальное окно
+			$('.modal').fadeIn();
+
+			// Затемняем фон
+			$("#overlay").fadeIn();
+
+			// Закрыть модальное окно через 2 секунды
+			setTimeout(function() {
+				$('.modal').fadeOut();
+				$("#overlay").fadeOut();
+			}, 2000);
 		});
 	});
 </script>
