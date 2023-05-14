@@ -288,7 +288,7 @@
 								</div>
 								<div class="timeline-body">
 									<p>
-										Заветный вопрос, обмен клятвами и конечно же слёзы (а как же без этого?).<br>
+										Заветный вопрос, обмен клятвами и конечно же слёзы.<br>
 										P.S. не забудьте заранее набрать конфети на фуршете :)
 									</p>
 								</div>
@@ -301,7 +301,7 @@
 								<div class="timeline-heading"><h3 class="timeline-title" style="font-family: 'Cormorant Garamond', serif; font-weight: bold">
 									17:30</h3>
 									<h3 class="timeline-title" style="font-family: 'Cormorant Garamond', serif;">
-										Пиршество</h3>
+										Развлекательная программа</h3>
 								</div>
 								<div class="timeline-body">
 									<p>
@@ -422,50 +422,50 @@
 			</div>
 		</div>
 		<div class="container" style="font-size: 18px">
-			<form>
+			<form action="process_form.php">
 				<div class="form-title animate-box">1. Ваше имя и фамилия</div>
 				<div class="form-group animate-box">
-					<input type="text" class="form-control form-line" id="guest_name" name="guest_name">
+					<input type="text" class="form-control form-line" id="guest_name" name="name">
 				</div>
 				<div class="form-title animate-box">2. Присутствие</div>
 				<div class="animate-box">
-					<input type="radio" name="answer" value="yes" id="one_guest">
-					<label for="one_guest">С удовольствием приду</label>
+					<input type="radio" name="attendance" value="yes" id="one_guest">
+					<label for="one_guest">С удовольствием приду!</label>
 				</div>
 				<div class="animate-box">
-					<input type="radio" name="answer" value="no" id="any_guest">
+					<input type="radio" name="attendance" value="yes" id="any_guest">
 					<label for="any_guest">Приду, буду не один(-на)</label>
 				</div>
 				<div class="form-group hidden-form animate-box" id="hidden-form">
-					<label for="adult_name">Имена взрослых</label>
-					<input type="text" class="form-control input-text-form" id="adult_name" name="adult_name">
+					<label for="adults_acompanee">Имена взрослых</label>
+					<input type="text" class="form-control input-text-form" id="adults_acompanee" name="adults_acompanee">
 					<label for="child_name">Имена детей</label>
-					<input type="text" class="form-control input-text-form" id="child_name" name="child_name">
+					<input type="text" class="form-control input-text-form" id="child_name" name="kids_acompanee">
 				</div>
 				<div class="animate-box">
-					<input type="radio" name="answer" value="no_guest" id="no_guest">
+					<input type="radio" name="attendance" value="no" id="no_guest">
 					<label for="no_guest">Не смогу присутствовать :(</label>
 				</div>
 				<div class="form-title animate-box">3. Предпочитаемый алкоголь</div>
 				<div class="animate-box">
-					<input type="radio" name="alcohol" value="no_alcohol" id="no_alcohol">
+					<input type="radio" name="alcohol_drinker" value="no" id="no_alcohol">
 					<label for="no_alcohol">Не пью, я за ЗОЖ</label>
 				</div>
 				<div class="animate-box">
-					<input type="radio" name="alcohol" value="wine" id="wine">
+					<input type="radio" name="alcohol_drinker" value="wine" id="wine">
 					<label for="wine">Вино</label>
 				</div>
 				<div class="animate-box">
-					<input type="radio" name="alcohol" value="vodka" id="vodka">
+					<input type="radio" name="alcohol_drinker" value="vodka" id="vodka">
 					<label for="vodka">Водка</label>
 				</div>
 				<div class="animate-box">
-					<input type="radio" name="alcohol" value="other" id="other">
+					<input type="radio" name="alcohol_drinker" value="other" id="other">
 					<label for="other">
-						<input for="other" type="text" class="form-control other-alcohol input-text-form form-line" id="other-alcohol" name="other-alcohol" placeholder="Другое">
+						<input type="text" class="form-control other-alcohol input-text-form form-line" id="other-alcohol" name="pref_alcohol" placeholder="Другое">
 					</label>
 				</div>
-				<button type="submit" class="btn btn-default submit-button animate-box">Отправить</button>
+				<button type="submit" class="btn btn-default submit-button animate-box" id="submitButton">Отправить</button>
 			</form>
 		</div>
 	</div>
@@ -645,23 +645,6 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
-						</div>
-					</form>
 				</div>
 			</div>
 		</div>
@@ -713,7 +696,46 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#submitButton').click(function(e) {
+			e.preventDefault();
+			var name = $('input[name="name"]').val();
+			var attendance = $('input[name="attendance"]:checked').val();
+			var adults_acompanee = $('input[name="adults_acompanee"]').val();
+			var kids_acompanee = $('input[name="kids_acompanee"]').val();
+			var alcohol_drinker = $('input[name="alcohol_drinker"]:checked').val() == 'no' ? 'no' : 'yes';
+			var pref_alcohol = '';
 
+			if (alcohol_drinker === 'yes') {
+				if($('input[id="other"]:checked').length > 0) {
+					 pref_alcohol = $('input[name="pref_alcohol"]').val();
+				} else {
+					pref_alcohol = $('input[name="alcohol_drinker"]:checked').val();
+				}
+			}
+
+
+			$.ajax({
+				url: 'process_form.php',
+				method: 'POST',
+				data: {
+					name: name,
+					attendance: attendance,
+					adults_acompanee: adults_acompanee,
+					kids_acompanee: kids_acompanee,
+					alcohol_drinker: alcohol_drinker,
+					pref_alcohol: pref_alcohol
+				},
+				success: function(response) {
+				},
+				error: function(xhr, status, error) {
+					console.log(error);
+				}
+			});
+		});
+	});
+</script>
 	<script>
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
