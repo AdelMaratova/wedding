@@ -196,6 +196,20 @@
 
 			return false;
 		})
+
+	};
+
+	var goToInvite = function() {
+	$('.js-rsvp-invite').on('click', function(event){
+
+		event.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: $('#invite').offset().top
+		}, 1000, 'easeInOutExpo');
+
+		return false;
+	})
 	};
 
 
@@ -240,6 +254,7 @@
 		testimonialCarousel();
 		goToTop();
 		goToRSVP();
+		goToInvite();
 		loaderPage();
 		counter();
 		counterWayPoint();
