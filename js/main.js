@@ -205,7 +205,7 @@
 		event.preventDefault();
 
 		$('html, body').animate({
-			scrollTop: $('#fh5co-couple').offset().top
+			scrollTop: $('#invite').offset().top
 		}, 1000, 'easeInOutExpo');
 
 		return false;
