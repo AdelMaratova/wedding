@@ -2,9 +2,9 @@
 
 // Database configuration
 $servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "wedding_invitation";
+$username = "p-335521_admin";
+$password = "m7G71ib0#";
+$dbname = "p-335521_wedding_invitation";
 
 // Create a new connection
 $conn = new mysqli($servername, $username, $password, $dbname);
