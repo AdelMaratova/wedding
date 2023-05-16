@@ -158,7 +158,7 @@
         targetTmpDate = new Date(
             parameters.year,
             parameters.month - 2,
-            parameters.day - 10,
+            parameters.day - 12,
             parameters.hours + 6,
             parameters.minutes,
             parameters.seconds
@@ -176,7 +176,6 @@
         } else {
             targetDate = targetTmpDate;
         }
-
         Array.prototype.forEach.call(cd, function (countdown) {
             var fullCountDown = createElements(parameters, countdown),
                 refresh;
@@ -192,18 +191,15 @@
                     nowUtc = new Date(now.getFullYear(), now.getMonth(), now.getDate(),
                         now.getHours(), now.getMinutes(), now.getSeconds());
                     secondsLeft = (targetDate - nowUtc.getTime()) / 1000;
-
                 } else {
-                    secondsLeft = (targetDate - now.getTime()) / 1000;
+                    secondsLeft = (targetDate - now.getTime()) / 1000
                 }
 
                 if (secondsLeft > 0) {
                     days = parseInt(secondsLeft / 86400, 10);
                     secondsLeft = secondsLeft % 86400;
-
                     hours = parseInt(secondsLeft / 3600, 10);
                     secondsLeft = secondsLeft % 3600;
-
                     minutes = parseInt(secondsLeft / 60, 10);
                     seconds = parseInt(secondsLeft % 60, 10);
                 } else {
